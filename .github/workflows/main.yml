@@ -14,4 +14,4 @@ jobs:
     - name: Check running containers
       run: docker ps
     - name: Run test suite
-      run: docker exec backend python manage.py test
+      run: docker exec todo_backend python manage.py test
