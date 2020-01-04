@@ -1,2 +1,5 @@
-# todo_list
-Simple Todo List Manager
+# proj1
+
+
+
+cp .env-sample .env
