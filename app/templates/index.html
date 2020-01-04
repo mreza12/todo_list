@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="m-2"><h4>Todo List Manager</h4></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'task_category_list' %}">Category</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'task_task_list' %}">Tasks</a></div>
+{% endblock %}

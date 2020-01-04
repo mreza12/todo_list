@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<table class="table">
+<tr>
+    <td>Name</td>
+    <td>Priority</td>
+    <td>Category</td>
+    <td>Note</td>
+    <td>Action</td>
+</tr>
+{% for object in object_list %}
+	{% if not object.done %}
+		<tr>
+		    <td>{{ object.name }}</td>
+		    <td>{{ object.priority }}</td>
+		    <td>{{ object.category }}</td>
+		    <td>{{ object.note }}</td>
+		    <td>
+		    	<a href="{{object.get_absolute_url}}">Detail</a> 
+		    	<a href="{{object.get_update_url}}">Edit</a>
+			</td>
+		</tr>
+	{% endif %}
+{% endfor %}
+</table><div><a class="btn btn-primary" href="{% url 'task_task_create' %}">Create a new task</a></div>
+{% endblock %}
