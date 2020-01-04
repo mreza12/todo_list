@@ -9,7 +9,7 @@ Simple Todo list manager
 
 
 
-This is a small todo list manager application written with python and can be run via docker or without docker
+This is a simple todo list manager application written with python and can be run via docker or without docker
 
 Build and run
 --------------
