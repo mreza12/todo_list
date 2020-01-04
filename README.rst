@@ -16,15 +16,15 @@ Build and run
 
 To build this app via docker::
 
-   *  clone this repository
+     clone this repository
   
-   *  # cd todo_list
+     # cd todo_list
    
-   *  # cp .env-sample .env
+     # cp .env-sample .env
    
-   *  # docker-compose up --build
+     # docker-compose up --build
    
-   * open http://localhost:8080 in your browser
+     open http://localhost:8080 in your browser
 
 
 Requirements
