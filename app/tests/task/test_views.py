@@ -67,7 +67,7 @@ def tests_task_create_view():
     data = {
         "note": "text",
         "done": True,
-        "priority": "text",
+        "priority": "Important",
         "name": "text",
         "category": category.pk,
     }
@@ -93,7 +93,7 @@ def tests_task_update_view():
     data = {
         "note": "text",
         "done": True,
-        "priority": "text",
+        "priority": "Urgent",
         "name": "text",
         "category": category.pk,
     }
