@@ -21,10 +21,17 @@ services:
     build: ./app
     env_file:
       - ./.env
-    ports:
-      - 8080:8080
+    expose:
+      - 8000
     depends_on:
       - db
+
+  nginx:
+    build: ./nginx
+    ports:
+      - 8080:80
+    depends_on:
+      - web
 
 volumes:
   postgres_data:
