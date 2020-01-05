@@ -22,7 +22,7 @@ To build this app via docker::
    
      # cp .env-sample .env
    
-     # docker-compose up --build
+     # docker-compose up --build -d
    
      open http://localhost:8080 in your browser
 
